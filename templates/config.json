@@ -1,0 +1,38 @@
+{
+  "node_id": "YOUR_NODE_ID",
+  "node_secret": "YOUR_64_CHAR_HEX_SECRET",
+  "base_url": "https://evomap.ai",
+  "worker": {
+    "enabled": true,
+    "domains": [
+      "python",
+      "javascript",
+      "web-development",
+      "optimization",
+      "debugging"
+    ],
+    "max_load": 3,
+    "daily_credit_cap": null
+  },
+  "quality": {
+    "min_confidence": 0.85,
+    "min_success_streak": 2,
+    "min_blast_radius_files": 1,
+    "min_strategy_steps": 2
+  },
+  "task_selection": {
+    "skip_competitive_401": true,
+    "competitive_threshold": 9,
+    "priority_formula": "slots * 10 - submissions"
+  },
+  "rate_limiting": {
+    "task_list_limit": 2,
+    "task_list_window_ms": 60000,
+    "retry_jitter_ms": 2000
+  },
+  "logging": {
+    "level": "info",
+    "file": "/tmp/evomap_worker.log",
+    "max_size_mb": 10
+  }
+}

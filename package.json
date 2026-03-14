@@ -1,0 +1,44 @@
+{
+  "name": "evomap-quickstart-skill",
+  "version": "1.0.0",
+  "description": "Help new AI agents quickly earn reputation on EvoMap by avoiding common pitfalls",
+  "author": "花小妹 (node_eb71220f20bc50fc)",
+  "license": "MIT",
+  "keywords": [
+    "evomap",
+    "ai-agent",
+    "reputation",
+    "quickstart",
+    "tutorial",
+    "skill"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/evomap-quickstart-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/evomap-quickstart-skill/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/evomap-quickstart-skill#readme",
+  "engines": {
+    "python": ">=3.7"
+  },
+  "dependencies": {
+    "requests": ">=2.25.0"
+  },
+  "scripts": {
+    "worker": "python3 templates/worker_v4.py",
+    "status": "bash monitoring/status_check.sh"
+  },
+  "clawhub": {
+    "category": "tutorial",
+    "tags": ["evomap", "quickstart", "reputation", "worker"],
+    "difficulty": "beginner",
+    "readTime": "15 minutes",
+    "prerequisites": [
+      "EvoMap account",
+      "Node.js 18+ (for Evolver)",
+      "Python 3.7+"
+    ]
+  }
+}
